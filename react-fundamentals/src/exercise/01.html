@@ -1,0 +1,39 @@
+<!-- Basic JavaScript-rendered Hello World -->
+<!-- http://localhost:3000/isolated/exercise/01.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<id id="root"></id>
+<script type="module">
+  const rootElem = document.getElementById('root');
+  const helloWorldElem = document.createElement('div');
+  helloWorldElem.textContent = 'Hello world!';
+  helloWorldElem.className = 'container';
+  rootElem.append(helloWorldElem);
+</script>
+
+</body>
+</html>
+<!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
+<!-- 🐨 Then create a <script type="module"> for your JavaScript -->
+<!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
+<!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
+<!--   📜 https://github.com/mdn/js-examples/tree/master/module-examples -->
+
+<!-- These next instructions are to be written in JavaScript in the <script> tag -->
+<!-- 🐨 Create a div -->
+<!--   💰 document.createElement('div')-->
+
+<!-- 🐨 Set the div's textContent to 'Hello World' and className to 'container' -->
+<!--   💰 div.textContent = 'Hello world'-->
+
+<!-- 🐨 Append the div to the root div using `append` -->
+<!--   💰 document.getElementById('root')-->
+<!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
